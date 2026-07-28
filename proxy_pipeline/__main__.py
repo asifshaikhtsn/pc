@@ -38,7 +38,7 @@ def env_float(name: str, default: float) -> float:
 
 async def async_main(root: Path) -> None:
     config_path = root / "config" / "sources.json"
-    state_path = root / "state" / "proxies.json"
+    state_path = root / "state" / "proxies.json.gz"
     mmdb_path = root / "data" / "GeoLite2-Country.mmdb"
 
     candidates, fetch_report = await fetch_all_sources(config_path)
