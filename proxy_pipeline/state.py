@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import gzip
 import json
 from datetime import datetime, timezone
 from pathlib import Path
@@ -25,22 +26,59 @@ def parse_time(value: str | None) -> datetime | None:
         return None
 
 
+def _empty_state() -> dict[str, Any]:
+    return {"version": 1, "updated_at": None, "proxies": {}}
+
+
+def _legacy_json_path(path: Path) -> Path | None:
+    # state/proxies.json.gz -> state/proxies.json
+    if path.suffix == ".gz":
+        return path.with_suffix("")
+    return None
+
+
 def load_state(path: Path) -> dict[str, Any]:
-    if not path.exists():
-        return {"version": 1, "updated_at": None, "proxies": {}}
-    try:
-        data = json.loads(path.read_text(encoding="utf-8"))
-        if not isinstance(data.get("proxies"), dict):
-            raise ValueError("invalid state")
-        return data
-    except Exception:
-        return {"version": 1, "updated_at": None, "proxies": {}}
+    candidates = [path]
+    legacy = _legacy_json_path(path)
+    if legacy is not None:
+        candidates.append(legacy)
+
+    for candidate in candidates:
+        if not candidate.exists():
+            continue
+        try:
+            if candidate.suffix == ".gz":
+                with gzip.open(candidate, "rt", encoding="utf-8") as handle:
+                    data = json.load(handle)
+            else:
+                data = json.loads(candidate.read_text(encoding="utf-8"))
+            if not isinstance(data.get("proxies"), dict):
+                raise ValueError("invalid state")
+            return data
+        except Exception:
+            continue
+    return _empty_state()
 
 
 def save_state(path: Path, state: dict[str, Any]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     state["updated_at"] = iso_now()
-    path.write_text(json.dumps(state, indent=2, sort_keys=True), encoding="utf-8")
+
+    if path.suffix == ".gz":
+        temporary = path.with_name(path.name + ".tmp")
+        with gzip.open(temporary, "wt", encoding="utf-8", compresslevel=9) as handle:
+            json.dump(state, handle, sort_keys=True, separators=(",", ":"))
+        temporary.replace(path)
+
+        # Remove the old uncompressed state after a successful migration.
+        legacy = _legacy_json_path(path)
+        if legacy is not None and legacy.exists():
+            legacy.unlink()
+    else:
+        path.write_text(
+            json.dumps(state, sort_keys=True, separators=(",", ":")),
+            encoding="utf-8",
+        )
 
 
 def sync_candidates(state: dict[str, Any], candidates: dict[str, Candidate], countries: dict[str, str]) -> None:
