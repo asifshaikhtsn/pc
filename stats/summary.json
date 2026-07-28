@@ -1,0 +1,102 @@
+{
+  "run": {
+    "check_concurrency": 120,
+    "check_timeout_seconds": 6.0,
+    "checks_completed": 1800,
+    "checks_selected": 1800,
+    "elite_checks_completed": 93,
+    "max_checks_per_run": 1800,
+    "state_entries_pruned": 0
+  },
+  "scraped_unique_endpoints": 18624,
+  "source_errors": [],
+  "sources": {
+    "dpangestuw-http": {
+      "errors": [],
+      "parsed": 4182
+    },
+    "dpangestuw-socks4": {
+      "errors": [],
+      "parsed": 2884
+    },
+    "dpangestuw-socks5": {
+      "errors": [],
+      "parsed": 3326
+    },
+    "gitrecon1455-fresh-proxy-list": {
+      "errors": [],
+      "parsed": 11659
+    }
+  },
+  "updated_at": "2026-07-28T19:23:42+00:00",
+  "validated": {
+    "elite": {
+      "countries": {
+        "BD": 3,
+        "CN": 1,
+        "HK": 1,
+        "ID": 16,
+        "KR": 1,
+        "LY": 1,
+        "NP": 1,
+        "VN": 1,
+        "ZA": 2
+      },
+      "total": 27
+    },
+    "http": {
+      "countries": {
+        "AU": 3,
+        "BD": 10,
+        "BR": 1,
+        "CN": 3,
+        "GQ": 1,
+        "HK": 2,
+        "ID": 77,
+        "IN": 1,
+        "KE": 1,
+        "KH": 1,
+        "KR": 1,
+        "LY": 1,
+        "TH": 1,
+        "US": 160,
+        "VN": 3,
+        "ZA": 4
+      },
+      "total": 270
+    },
+    "https": {
+      "countries": {
+        "AU": 1,
+        "BD": 9,
+        "CN": 1,
+        "GQ": 1,
+        "HK": 1,
+        "ID": 65,
+        "IN": 4,
+        "KE": 3,
+        "KH": 1,
+        "KR": 1,
+        "LY": 1,
+        "NP": 1,
+        "TH": 1,
+        "VN": 1,
+        "ZA": 2
+      },
+      "total": 93
+    },
+    "socks4": {
+      "countries": {},
+      "total": 0
+    },
+    "socks5": {
+      "countries": {
+        "ID": 4,
+        "IN": 1,
+        "JP": 2,
+        "ZA": 1
+      },
+      "total": 8
+    }
+  }
+}
