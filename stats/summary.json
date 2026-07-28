@@ -2,33 +2,33 @@
   "run": {
     "check_concurrency": 120,
     "check_timeout_seconds": 6.0,
-    "checks_completed": 10000,
-    "checks_selected": 10000,
-    "elite_checks_completed": 100,
-    "max_checks_per_run": 10000,
+    "checks_completed": 2000,
+    "checks_selected": 2000,
+    "elite_checks_completed": 55,
+    "max_checks_per_run": 2000,
     "state_entries_pruned": 0
   },
-  "scraped_unique_endpoints": 18517,
+  "scraped_unique_endpoints": 268092,
   "source_errors": [],
   "sources": {
     "dpangestuw-http": {
       "errors": [],
-      "parsed": 4329
+      "parsed": 4519
     },
     "dpangestuw-socks4": {
       "errors": [],
-      "parsed": 2878
+      "parsed": 2884
     },
     "dpangestuw-socks5": {
       "errors": [],
-      "parsed": 3347
+      "parsed": 3359
     },
     "gitrecon1455-fresh-proxy-list": {
       "errors": [],
-      "parsed": 11659
+      "parsed": 267962
     }
   },
-  "updated_at": "2026-07-28T19:41:33+00:00",
+  "updated_at": "2026-07-28T20:33:42+00:00",
   "validated": {
     "elite": {
       "countries": {
@@ -40,7 +40,7 @@
         "FI": 3,
         "GB": 1,
         "HK": 1,
-        "ID": 21,
+        "ID": 24,
         "IN": 2,
         "IQ": 1,
         "JP": 1,
@@ -48,20 +48,21 @@
         "KR": 1,
         "LY": 2,
         "MX": 1,
+        "NG": 1,
         "NP": 1,
         "RU": 3,
         "SC": 1,
         "SG": 4,
-        "TR": 2,
+        "TR": 3,
         "US": 3,
         "VN": 2,
         "ZA": 3
       },
-      "total": 77
+      "total": 82
     },
     "http": {
       "countries": {
-        "AU": 5,
+        "AU": 428,
         "BD": 17,
         "BG": 1,
         "BR": 1,
@@ -84,6 +85,7 @@
         "ID": 124,
         "IN": 16,
         "IR": 1,
+        "JP": 1,
         "KE": 2,
         "KH": 3,
         "KR": 3,
@@ -99,7 +101,7 @@
         "SC": 6,
         "SG": 6,
         "SN": 1,
-        "TH": 5,
+        "TH": 7,
         "TR": 11,
         "TW": 1,
         "US": 1729,
@@ -107,7 +109,7 @@
         "VN": 6,
         "ZA": 5
       },
-      "total": 2074
+      "total": 2500
     },
     "https": {
       "countries": {
