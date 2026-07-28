@@ -2,7 +2,7 @@ name: Update proxy lists
 
 on:
   schedule:
-    - cron: "*3/10 * * * *"
+    - cron: "3/10 * * * *"
 
   workflow_dispatch:
     inputs:
@@ -47,72 +47,6 @@ jobs:
 
       - name: Install dependencies
         run: pip install -r requirements.txt
-
-      # Temporary debugging step
-      - name: Debug proxy source counts
-        shell: bash
-        run: |
-          set -u
-
-          debug_source() {
-            NAME="$1"
-            URL="$2"
-
-            RAW_FILE="${NAME}_raw.txt"
-            PARSED_FILE="${NAME}_parsed.txt"
-
-            : > "$RAW_FILE"
-            : > "$PARSED_FILE"
-
-            if HTTP_CODE=$(curl \
-              --location \
-              --silent \
-              --show-error \
-              --retry 3 \
-              --connect-timeout 15 \
-              --max-time 60 \
-              --user-agent "Mozilla/5.0" \
-              --write-out "%{http_code}" \
-              --output "$RAW_FILE" \
-              "$URL"); then
-              CURL_STATUS="success"
-            else
-              CURL_STATUS="failed"
-            fi
-
-            grep -Eo \
-              '([0-9]{1,3}\.){3}[0-9]{1,3}:[0-9]{1,5}' \
-              "$RAW_FILE" |
-              sort -u > "$PARSED_FILE" || true
-
-            echo "========================================"
-            echo "Source: $NAME"
-            echo "URL: $URL"
-            echo "Curl status: $CURL_STATUS"
-            echo "HTTP status: $HTTP_CODE"
-            echo "Downloaded bytes: $(wc -c < "$RAW_FILE")"
-            echo "Downloaded lines: $(wc -l < "$RAW_FILE")"
-            echo "Parsed unique proxies: $(wc -l < "$PARSED_FILE")"
-          }
-
-          # In dono URLs ko apni actual raw proxy URLs se replace karo.
-          debug_source \
-            "source_1" \
-            "PAHLI_RAW_PROXY_URL"
-
-          debug_source \
-            "source_2" \
-            "DUSRI_RAW_PROXY_URL"
-
-          cat source_1_parsed.txt source_2_parsed.txt \
-            > debug_combined_proxies.txt
-
-          sort -u debug_combined_proxies.txt \
-            > debug_unique_proxies.txt
-
-          echo "========================================"
-          echo "Combined before dedupe: $(wc -l < debug_combined_proxies.txt)"
-          echo "Combined unique endpoints: $(wc -l < debug_unique_proxies.txt)"
 
       - name: Build weekly GeoLite cache key
         id: geolite-key
