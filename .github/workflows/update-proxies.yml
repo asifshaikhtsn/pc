@@ -1,0 +1,88 @@
+name: Update proxy lists
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+
+  workflow_dispatch:
+    inputs:
+      max_checks:
+        description: "Maximum protocol checks in this run"
+        required: false
+        default: "1800"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: proxy-list-updater
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    env:
+      MAX_CHECKS_PER_RUN: ${{ inputs.max_checks || '1800' }}
+      CHECK_CONCURRENCY: "120"
+      CHECK_TIMEOUT_SECONDS: "6"
+      ELITE_CHECKS_PER_RUN: "100"
+      ELITE_CONCURRENCY: "15"
+      WORKING_RECHECK_MINUTES: "30"
+      DEAD_RECHECK_MINUTES: "360"
+      PRUNE_AFTER_DAYS: "3"
+      ACTIVE_SOURCE_WINDOW_MINUTES: "60"
+      MAX_WORKING_AGE_MINUTES: "360"
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build weekly GeoLite cache key
+        id: geolite-key
+        shell: bash
+        run: echo "week=$(date -u +%G-%V)" >> "$GITHUB_OUTPUT"
+
+      - name: Restore GeoLite country database
+        id: geolite-cache
+        uses: actions/cache@v4
+        with:
+          path: data/GeoLite2-Country.mmdb
+          key: geolite-country-${{ steps.geolite-key.outputs.week }}
+
+      - name: Download GeoLite country database
+        if: steps.geolite-cache.outputs.cache-hit != 'true'
+        shell: bash
+        run: |
+          mkdir -p data
+          curl --fail --location --retry 3 \
+            https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-Country.mmdb \
+            --output data/GeoLite2-Country.mmdb
+
+      - name: Scrape, validate, and organize
+        run: python -m proxy_pipeline --root .
+
+      - name: Commit changed data
+        shell: bash
+        run: |
+          git config user.name "pcpehle-updater[bot]"
+          git config user.email "pcpehle-updater@users.noreply.github.com"
+          git add proxies raw stats state
+
+          if git diff --cached --quiet; then
+            echo "No data changes to commit."
+            exit 0
+          fi
+
+          git commit -m "chore: update proxy lists [skip ci]"
+          git push
