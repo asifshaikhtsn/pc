@@ -1,0 +1,47 @@
+[
+  {
+    "name": "gitrecon1455-fresh-proxy-list",
+    "mirrors": [
+      {
+        "url": "https://raw.githubusercontent.com/gitrecon1455/fresh-proxy-list/refs/heads/main/proxylist.json",
+        "format": "json"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/gitrecon1455/fresh-proxy-list/refs/heads/main/proxylist.txt",
+        "format": "text"
+      }
+    ],
+    "protocol": "auto",
+    "fallback_protocols": ["http", "socks4", "socks5"]
+  },
+  {
+    "name": "dpangestuw-http",
+    "mirrors": [
+      {
+        "url": "https://raw.githubusercontent.com/dpangestuw/Free-Proxy/refs/heads/main/http_proxies.txt",
+        "format": "text"
+      }
+    ],
+    "protocol": "http"
+  },
+  {
+    "name": "dpangestuw-socks4",
+    "mirrors": [
+      {
+        "url": "https://raw.githubusercontent.com/dpangestuw/Free-Proxy/refs/heads/main/socks4_proxies.txt",
+        "format": "text"
+      }
+    ],
+    "protocol": "socks4"
+  },
+  {
+    "name": "dpangestuw-socks5",
+    "mirrors": [
+      {
+        "url": "https://raw.githubusercontent.com/dpangestuw/Free-Proxy/refs/heads/main/socks5_proxies.txt",
+        "format": "text"
+      }
+    ],
+    "protocol": "socks5"
+  }
+]
