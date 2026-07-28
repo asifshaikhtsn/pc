@@ -2,14 +2,14 @@ name: Update proxy lists
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*3/10 * * * *"
 
   workflow_dispatch:
     inputs:
       max_checks:
         description: "Maximum protocol checks in this run"
         required: false
-        default: "1800"
+        default: "10000"
 
 permissions:
   contents: write
@@ -24,7 +24,7 @@ jobs:
     timeout-minutes: 25
 
     env:
-      MAX_CHECKS_PER_RUN: ${{ inputs.max_checks || '1800' }}
+      MAX_CHECKS_PER_RUN: ${{ inputs.max_checks || '10000' }}
       CHECK_CONCURRENCY: "120"
       CHECK_TIMEOUT_SECONDS: "6"
       ELITE_CHECKS_PER_RUN: "100"
@@ -33,7 +33,7 @@ jobs:
       DEAD_RECHECK_MINUTES: "360"
       PRUNE_AFTER_DAYS: "3"
       ACTIVE_SOURCE_WINDOW_MINUTES: "60"
-      MAX_WORKING_AGE_MINUTES: "360"
+      MAX_WORKING_AGE_MINUTES: "2880"
 
     steps:
       - name: Checkout repository
