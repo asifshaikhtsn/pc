@@ -24,8 +24,8 @@ http,GM,1
 http,GQ,1
 http,GR,1
 http,HK,16
-http,ID,388
-http,IN,47
+http,ID,390
+http,IN,48
 http,IR,1
 http,JP,8
 http,KE,12
@@ -49,14 +49,14 @@ http,SN,1
 http,TH,12
 http,TR,11
 http,TW,1
-http,US,4652
+http,US,7103
 http,VE,1
-http,VN,9
+http,VN,10
 http,ZA,173
-http,ALL,6508
+http,ALL,8963
 https,AO,1
 https,AU,2
-https,BD,40
+https,BD,41
 https,CN,26
 https,CO,3
 https,DE,1
@@ -64,7 +64,7 @@ https,FI,3
 https,GB,1
 https,GQ,1
 https,HK,4
-https,ID,323
+https,ID,321
 https,IN,27
 https,IQ,1
 https,IR,1
@@ -84,7 +84,7 @@ https,RU,3
 https,SC,1
 https,SG,4
 https,SL,1
-https,TH,5
+https,TH,6
 https,TR,6
 https,US,10
 https,VN,8
