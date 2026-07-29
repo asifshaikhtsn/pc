@@ -4,78 +4,79 @@
     "check_timeout_seconds": 6.0,
     "checks_completed": 10000,
     "checks_selected": 10000,
-    "elite_checks_completed": 7,
+    "elite_checks_completed": 100,
     "max_checks_per_run": 10000,
     "state_entries_pruned": 0
   },
-  "scraped_unique_endpoints": 262213,
+  "scraped_unique_endpoints": 266769,
   "source_errors": [],
   "sources": {
     "dpangestuw-http": {
       "errors": [],
-      "parsed": 4127
+      "parsed": 4034
     },
     "dpangestuw-socks4": {
       "errors": [],
-      "parsed": 2768
+      "parsed": 2800
     },
     "dpangestuw-socks5": {
       "errors": [],
-      "parsed": 2587
+      "parsed": 2673
     },
     "gitrecon1455-fresh-proxy-list": {
       "errors": [],
-      "parsed": 262112
+      "parsed": 266671
     }
   },
-  "updated_at": "2026-07-29T20:47:23+00:00",
+  "updated_at": "2026-07-29T21:49:55+00:00",
   "validated": {
     "elite": {
       "countries": {
         "AU": 2,
-        "BD": 7,
-        "CN": 19,
+        "BD": 9,
+        "CN": 24,
         "CO": 1,
         "DE": 1,
         "FI": 3,
         "GB": 1,
         "HK": 1,
-        "ID": 113,
-        "IN": 8,
+        "ID": 120,
+        "IN": 10,
         "IQ": 1,
         "JP": 2,
         "KE": 3,
         "KH": 1,
         "KR": 1,
         "LY": 3,
+        "MM": 1,
         "MX": 2,
-        "NG": 2,
+        "NG": 3,
         "NP": 1,
-        "RU": 3,
+        "RU": 4,
         "SC": 1,
         "SG": 5,
         "SL": 1,
         "TR": 4,
         "US": 5,
-        "VN": 2,
+        "VN": 5,
         "ZA": 3
       },
-      "total": 196
+      "total": 218
     },
     "http": {
       "countries": {
         "AR": 2,
         "AU": 572,
-        "BD": 48,
+        "BD": 47,
         "BE": 3,
         "BG": 1,
         "BR": 77,
         "BS": 1,
-        "CA": 322,
+        "CA": 321,
         "CH": 1,
         "CI": 1,
         "CL": 3,
-        "CN": 56,
+        "CN": 59,
         "CO": 2,
         "CZ": 4,
         "DE": 62,
@@ -86,20 +87,20 @@
         "ES": 5,
         "FI": 5,
         "FR": 36,
-        "GB": 909,
+        "GB": 910,
         "GH": 2,
         "GM": 1,
         "GQ": 1,
         "GR": 1,
         "HK": 17,
         "HU": 2,
-        "ID": 388,
+        "ID": 386,
         "IE": 3,
-        "IN": 49,
+        "IN": 50,
         "IR": 1,
         "JP": 9,
         "KE": 12,
-        "KH": 11,
+        "KH": 12,
         "KR": 5,
         "LT": 1,
         "LY": 2,
@@ -109,38 +110,39 @@
         "NO": 44,
         "NP": 1,
         "PH": 15,
-        "PK": 4,
+        "PK": 6,
         "PL": 2,
         "RS": 9,
-        "RU": 5,
+        "RU": 8,
         "SC": 6,
-        "SG": 11,
+        "SG": 12,
         "SL": 2,
         "SN": 1,
-        "TH": 29,
+        "TH": 32,
         "TR": 12,
         "TW": 3,
-        "UA": 6,
-        "US": 15236,
+        "UA": 7,
+        "US": 15227,
         "VE": 1,
-        "VN": 10,
-        "ZA": 176
+        "VN": 11,
+        "WS": 1,
+        "ZA": 174
       },
-      "total": 18205
+      "total": 18208
     },
     "https": {
       "countries": {
         "AO": 1,
         "AU": 2,
         "BD": 40,
-        "CN": 28,
+        "CN": 29,
         "CO": 3,
         "DE": 1,
         "FI": 3,
         "GB": 1,
         "GQ": 1,
         "HK": 4,
-        "ID": 320,
+        "ID": 318,
         "IE": 1,
         "IN": 28,
         "IQ": 1,
@@ -155,20 +157,20 @@
         "MX": 2,
         "NG": 3,
         "NL": 1,
-        "NP": 3,
+        "NP": 4,
         "PH": 8,
         "PR": 1,
-        "RU": 3,
+        "RU": 4,
         "SC": 1,
         "SG": 5,
         "SL": 1,
         "TH": 6,
         "TR": 8,
         "US": 14,
-        "VN": 8,
+        "VN": 9,
         "ZA": 3
       },
-      "total": 524
+      "total": 526
     },
     "socks4": {
       "countries": {
@@ -200,7 +202,7 @@
         "IN": 4,
         "IT": 1,
         "JP": 6,
-        "KH": 3,
+        "KH": 4,
         "KR": 3,
         "NL": 4,
         "PH": 1,
@@ -211,7 +213,7 @@
         "VN": 3,
         "ZA": 2
       },
-      "total": 100
+      "total": 101
     }
   }
 }
