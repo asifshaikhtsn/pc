@@ -8,27 +8,27 @@
     "max_checks_per_run": 10000,
     "state_entries_pruned": 0
   },
-  "scraped_unique_endpoints": 270232,
+  "scraped_unique_endpoints": 268802,
   "source_errors": [],
   "sources": {
     "dpangestuw-http": {
       "errors": [],
-      "parsed": 3507
+      "parsed": 3867
     },
     "dpangestuw-socks4": {
       "errors": [],
-      "parsed": 2311
+      "parsed": 2804
     },
     "dpangestuw-socks5": {
       "errors": [],
-      "parsed": 2575
+      "parsed": 2915
     },
     "gitrecon1455-fresh-proxy-list": {
       "errors": [],
-      "parsed": 270216
+      "parsed": 268767
     }
   },
-  "updated_at": "2026-07-29T13:25:12+00:00",
+  "updated_at": "2026-07-29T15:34:58+00:00",
   "validated": {
     "elite": {
       "countries": {
@@ -40,7 +40,7 @@
         "FI": 3,
         "GB": 1,
         "HK": 1,
-        "ID": 82,
+        "ID": 81,
         "IN": 5,
         "IQ": 1,
         "JP": 1,
@@ -60,7 +60,7 @@
         "VN": 2,
         "ZA": 3
       },
-      "total": 152
+      "total": 151
     },
     "http": {
       "countries": {
@@ -68,29 +68,29 @@
         "BD": 48,
         "BE": 3,
         "BG": 1,
-        "BR": 1,
-        "CA": 1,
+        "BR": 31,
+        "CA": 74,
         "CI": 1,
         "CL": 1,
         "CN": 46,
         "CO": 2,
         "CZ": 1,
-        "DE": 6,
+        "DE": 57,
         "DK": 1,
         "DO": 1,
         "EC": 2,
         "EE": 2,
         "ES": 1,
         "FI": 4,
-        "FR": 2,
-        "GB": 407,
+        "FR": 29,
+        "GB": 472,
         "GH": 2,
         "GM": 1,
         "GQ": 1,
         "GR": 1,
         "HK": 16,
-        "ID": 390,
-        "IN": 48,
+        "ID": 388,
+        "IN": 49,
         "IR": 1,
         "JP": 8,
         "KE": 12,
@@ -111,15 +111,15 @@
         "SG": 9,
         "SL": 2,
         "SN": 1,
-        "TH": 12,
+        "TH": 29,
         "TR": 11,
         "TW": 1,
-        "US": 7103,
+        "US": 9235,
         "VE": 1,
         "VN": 10,
         "ZA": 173
       },
-      "total": 8963
+      "total": 11357
     },
     "https": {
       "countries": {
@@ -133,8 +133,8 @@
         "GB": 1,
         "GQ": 1,
         "HK": 4,
-        "ID": 321,
-        "IN": 27,
+        "ID": 315,
+        "IN": 28,
         "IQ": 1,
         "IR": 1,
         "JP": 1,
@@ -155,11 +155,11 @@
         "SL": 1,
         "TH": 6,
         "TR": 6,
-        "US": 10,
+        "US": 11,
         "VN": 8,
         "ZA": 3
       },
-      "total": 513
+      "total": 509
     },
     "socks4": {
       "countries": {
