@@ -4,31 +4,31 @@
     "check_timeout_seconds": 6.0,
     "checks_completed": 10000,
     "checks_selected": 10000,
-    "elite_checks_completed": 80,
+    "elite_checks_completed": 78,
     "max_checks_per_run": 10000,
     "state_entries_pruned": 0
   },
-  "scraped_unique_endpoints": 267034,
+  "scraped_unique_endpoints": 267577,
   "source_errors": [],
   "sources": {
     "dpangestuw-http": {
       "errors": [],
-      "parsed": 3954
+      "parsed": 3775
     },
     "dpangestuw-socks4": {
       "errors": [],
-      "parsed": 2712
+      "parsed": 2688
     },
     "dpangestuw-socks5": {
       "errors": [],
-      "parsed": 2560
+      "parsed": 2521
     },
     "gitrecon1455-fresh-proxy-list": {
       "errors": [],
-      "parsed": 266976
+      "parsed": 267527
     }
   },
-  "updated_at": "2026-07-29T23:54:00+00:00",
+  "updated_at": "2026-07-30T01:15:57+00:00",
   "validated": {
     "elite": {
       "countries": {
@@ -40,8 +40,8 @@
         "FI": 3,
         "GB": 1,
         "HK": 3,
-        "ID": 135,
-        "IN": 10,
+        "ID": 139,
+        "IN": 11,
         "IQ": 1,
         "JP": 2,
         "KE": 3,
@@ -63,13 +63,13 @@
         "VN": 5,
         "ZA": 3
       },
-      "total": 239
+      "total": 244
     },
     "http": {
       "countries": {
         "AR": 2,
         "AU": 572,
-        "BD": 49,
+        "BD": 50,
         "BE": 3,
         "BG": 1,
         "BR": 77,
@@ -78,7 +78,7 @@
         "CH": 1,
         "CI": 1,
         "CL": 3,
-        "CN": 78,
+        "CN": 86,
         "CO": 2,
         "CZ": 4,
         "DE": 69,
@@ -89,18 +89,18 @@
         "ES": 5,
         "FI": 5,
         "FR": 36,
-        "GB": 914,
+        "GB": 915,
         "GH": 2,
         "GM": 1,
         "GQ": 1,
         "GR": 1,
         "HK": 17,
         "HU": 2,
-        "ID": 397,
-        "IE": 2,
-        "IN": 50,
+        "ID": 410,
+        "IE": 4,
+        "IN": 53,
         "IR": 1,
-        "JP": 9,
+        "JP": 10,
         "KE": 12,
         "KH": 13,
         "KR": 13,
@@ -125,13 +125,13 @@
         "TR": 12,
         "TW": 4,
         "UA": 7,
-        "US": 15236,
+        "US": 15243,
         "VE": 1,
-        "VN": 18,
+        "VN": 19,
         "WS": 1,
         "ZA": 174
       },
-      "total": 18288
+      "total": 18325
     },
     "https": {
       "countries": {
@@ -145,7 +145,7 @@
         "GB": 1,
         "GQ": 1,
         "HK": 4,
-        "ID": 327,
+        "ID": 330,
         "IE": 1,
         "IN": 28,
         "IQ": 1,
@@ -173,7 +173,7 @@
         "VN": 10,
         "ZA": 3
       },
-      "total": 543
+      "total": 546
     },
     "socks4": {
       "countries": {
