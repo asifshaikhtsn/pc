@@ -8,27 +8,27 @@
     "max_checks_per_run": 10000,
     "state_entries_pruned": 0
   },
-  "scraped_unique_endpoints": 265430,
+  "scraped_unique_endpoints": 265276,
   "source_errors": [],
   "sources": {
     "dpangestuw-http": {
       "errors": [],
-      "parsed": 3549
+      "parsed": 3661
     },
     "dpangestuw-socks4": {
       "errors": [],
-      "parsed": 2151
+      "parsed": 2689
     },
     "dpangestuw-socks5": {
       "errors": [],
-      "parsed": 1898
+      "parsed": 2367
     },
     "gitrecon1455-fresh-proxy-list": {
       "errors": [],
-      "parsed": 265354
+      "parsed": 265240
     }
   },
-  "updated_at": "2026-07-30T07:16:43+00:00",
+  "updated_at": "2026-07-30T09:49:31+00:00",
   "validated": {
     "elite": {
       "countries": {
@@ -41,8 +41,8 @@
         "GB": 1,
         "GQ": 1,
         "HK": 3,
-        "ID": 144,
-        "IN": 10,
+        "ID": 142,
+        "IN": 11,
         "IQ": 1,
         "JP": 2,
         "KE": 3,
@@ -65,25 +65,25 @@
         "VN": 5,
         "ZA": 3
       },
-      "total": 254
+      "total": 253
     },
     "http": {
       "countries": {
         "AR": 2,
         "AU": 572,
-        "BD": 48,
+        "BD": 53,
         "BE": 3,
         "BG": 1,
-        "BR": 77,
+        "BR": 76,
         "BS": 1,
-        "CA": 321,
+        "CA": 322,
         "CH": 1,
         "CI": 1,
         "CL": 3,
-        "CN": 198,
+        "CN": 206,
         "CO": 2,
         "CZ": 4,
-        "DE": 69,
+        "DE": 77,
         "DK": 2,
         "DO": 1,
         "EC": 2,
@@ -91,21 +91,21 @@
         "ES": 5,
         "FI": 5,
         "FR": 36,
-        "GB": 914,
+        "GB": 913,
         "GH": 2,
         "GM": 1,
         "GQ": 1,
         "GR": 1,
         "HK": 17,
         "HU": 2,
-        "ID": 406,
-        "IE": 2,
-        "IN": 54,
+        "ID": 400,
+        "IE": 3,
+        "IN": 57,
         "IR": 1,
         "JP": 12,
-        "KE": 11,
-        "KH": 11,
-        "KR": 20,
+        "KE": 12,
+        "KH": 12,
+        "KR": 24,
         "LT": 1,
         "LY": 2,
         "MM": 1,
@@ -115,46 +115,46 @@
         "NO": 44,
         "NP": 1,
         "NZ": 1,
-        "PH": 28,
-        "PK": 7,
+        "PH": 31,
+        "PK": 8,
         "PL": 2,
         "RS": 9,
         "RU": 8,
         "SC": 6,
-        "SG": 15,
+        "SG": 22,
         "SL": 2,
         "SN": 1,
-        "TH": 38,
+        "TH": 42,
         "TR": 11,
-        "TW": 4,
+        "TW": 7,
         "UA": 7,
-        "US": 15247,
+        "US": 15219,
         "VE": 1,
-        "VN": 20,
+        "VN": 22,
         "WS": 1,
-        "ZA": 175
+        "ZA": 174
       },
-      "total": 18456
+      "total": 18471
     },
     "https": {
       "countries": {
         "AO": 1,
         "AU": 2,
         "BD": 43,
-        "CN": 35,
+        "CN": 37,
         "CO": 3,
         "DE": 1,
         "FI": 3,
         "GB": 1,
         "GQ": 1,
         "HK": 4,
-        "ID": 323,
+        "ID": 320,
         "IE": 1,
-        "IN": 26,
+        "IN": 28,
         "IQ": 1,
         "IR": 1,
         "JP": 2,
-        "KE": 9,
+        "KE": 10,
         "KH": 2,
         "KR": 2,
         "LY": 4,
@@ -163,25 +163,25 @@
         "MX": 2,
         "NG": 3,
         "NP": 4,
-        "PH": 17,
+        "PH": 19,
         "PK": 1,
         "PR": 1,
         "RU": 4,
         "SC": 1,
-        "SG": 5,
+        "SG": 8,
         "SL": 1,
-        "TH": 6,
+        "TH": 7,
         "TR": 8,
-        "US": 14,
-        "VN": 9,
+        "US": 15,
+        "VN": 10,
         "ZA": 3
       },
-      "total": 546
+      "total": 556
     },
     "socks4": {
       "countries": {
         "BR": 6,
-        "CN": 8,
+        "CN": 7,
         "HK": 2,
         "KR": 1,
         "NL": 1,
@@ -190,7 +190,7 @@
         "TR": 1,
         "VN": 4
       },
-      "total": 30
+      "total": 29
     },
     "socks5": {
       "countries": {
@@ -198,28 +198,28 @@
         "BD": 8,
         "BR": 5,
         "CA": 1,
-        "CN": 13,
+        "CN": 14,
         "CO": 1,
         "DE": 2,
         "FI": 1,
-        "FR": 3,
+        "FR": 4,
         "HK": 4,
-        "ID": 11,
+        "ID": 10,
         "IN": 4,
         "IT": 1,
         "JP": 6,
         "KH": 4,
-        "KR": 3,
+        "KR": 2,
         "NL": 4,
         "PH": 1,
         "RU": 8,
         "SC": 1,
         "SG": 5,
-        "US": 14,
-        "VN": 3,
+        "US": 15,
+        "VN": 4,
         "ZA": 2
       },
-      "total": 107
+      "total": 109
     }
   }
 }
