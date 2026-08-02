@@ -6,29 +6,29 @@
     "checks_selected": 10000,
     "elite_checks_completed": 100,
     "max_checks_per_run": 10000,
-    "state_entries_pruned": 169
+    "state_entries_pruned": 328
   },
-  "scraped_unique_endpoints": 263757,
+  "scraped_unique_endpoints": 263835,
   "source_errors": [],
   "sources": {
     "dpangestuw-http": {
       "errors": [],
-      "parsed": 2457
+      "parsed": 2408
     },
     "dpangestuw-socks4": {
       "errors": [],
-      "parsed": 2070
+      "parsed": 2099
     },
     "dpangestuw-socks5": {
       "errors": [],
-      "parsed": 1557
+      "parsed": 1560
     },
     "gitrecon1455-fresh-proxy-list": {
       "errors": [],
-      "parsed": 263753
+      "parsed": 263826
     }
   },
-  "updated_at": "2026-08-02T11:08:06+00:00",
+  "updated_at": "2026-08-02T12:16:33+00:00",
   "validated": {
     "elite": {
       "countries": {
@@ -38,7 +38,7 @@
         "BG": 1,
         "BR": 9,
         "CA": 2,
-        "CH": 17,
+        "CH": 20,
         "CN": 7,
         "CO": 16,
         "DE": 3,
@@ -76,7 +76,7 @@
         "VN": 1,
         "ZA": 1
       },
-      "total": 236
+      "total": 239
     },
     "http": {
       "countries": {
@@ -91,15 +91,15 @@
         "BG": 2,
         "BR": 60,
         "BZ": 26,
-        "CA": 61,
-        "CH": 209,
+        "CA": 62,
+        "CH": 215,
         "CL": 9,
-        "CN": 29,
+        "CN": 28,
         "CO": 47,
         "CR": 80,
         "CY": 15,
         "CZ": 165,
-        "DE": 56,
+        "DE": 57,
         "DK": 4,
         "DO": 10,
         "EC": 12,
@@ -164,7 +164,7 @@
         "TR": 21,
         "TW": 6,
         "UA": 6,
-        "US": 11029,
+        "US": 11043,
         "UY": 1,
         "UZ": 1,
         "VE": 13,
@@ -173,7 +173,7 @@
         "ZA": 16,
         "ZW": 9
       },
-      "total": 17690
+      "total": 17711
     },
     "https": {
       "countries": {
@@ -184,7 +184,7 @@
         "BG": 1,
         "BR": 27,
         "CA": 1,
-        "CH": 17,
+        "CH": 23,
         "CL": 4,
         "CN": 11,
         "CO": 39,
@@ -231,13 +231,13 @@
         "TR": 12,
         "TZ": 1,
         "UA": 4,
-        "US": 21,
+        "US": 22,
         "UY": 1,
         "VE": 11,
         "VN": 3,
         "ZA": 3
       },
-      "total": 379
+      "total": 386
     },
     "socks4": {
       "countries": {
