@@ -6,29 +6,29 @@
     "checks_selected": 10000,
     "elite_checks_completed": 100,
     "max_checks_per_run": 10000,
-    "state_entries_pruned": 523
+    "state_entries_pruned": 0
   },
-  "scraped_unique_endpoints": 263718,
+  "scraped_unique_endpoints": 263616,
   "source_errors": [],
   "sources": {
     "dpangestuw-http": {
       "errors": [],
-      "parsed": 3146
+      "parsed": 2983
     },
     "dpangestuw-socks4": {
       "errors": [],
-      "parsed": 2538
+      "parsed": 2553
     },
     "dpangestuw-socks5": {
       "errors": [],
-      "parsed": 2079
+      "parsed": 2058
     },
     "gitrecon1455-fresh-proxy-list": {
       "errors": [],
-      "parsed": 263676
+      "parsed": 263611
     }
   },
-  "updated_at": "2026-08-02T14:05:09+00:00",
+  "updated_at": "2026-08-02T15:20:40+00:00",
   "validated": {
     "elite": {
       "countries": {
@@ -87,19 +87,19 @@
         "AU": 5,
         "AZ": 1,
         "BD": 11,
-        "BE": 2,
+        "BE": 1,
         "BG": 2,
         "BR": 55,
         "BZ": 26,
         "CA": 59,
-        "CH": 211,
+        "CH": 212,
         "CL": 9,
         "CN": 29,
         "CO": 47,
         "CR": 80,
         "CY": 15,
         "CZ": 165,
-        "DE": 58,
+        "DE": 59,
         "DK": 4,
         "DO": 10,
         "EC": 12,
@@ -108,7 +108,7 @@
         "ET": 1,
         "FI": 7,
         "FR": 50,
-        "GB": 2204,
+        "GB": 2203,
         "GD": 1,
         "GE": 1,
         "GH": 2,
@@ -117,11 +117,11 @@
         "HK": 11,
         "HN": 3,
         "HU": 3,
-        "ID": 46,
+        "ID": 45,
         "IE": 1,
         "IL": 1,
         "IM": 1023,
-        "IN": 28,
+        "IN": 29,
         "IQ": 1,
         "IR": 10,
         "IT": 10,
@@ -164,7 +164,7 @@
         "TR": 21,
         "TW": 6,
         "UA": 6,
-        "US": 11000,
+        "US": 10978,
         "UY": 1,
         "UZ": 1,
         "VE": 13,
@@ -173,7 +173,7 @@
         "ZA": 17,
         "ZW": 9
       },
-      "total": 17648
+      "total": 17626
     },
     "https": {
       "countries": {
@@ -184,11 +184,11 @@
         "BG": 1,
         "BR": 26,
         "CA": 1,
-        "CH": 20,
+        "CH": 21,
         "CL": 4,
         "CN": 11,
         "CO": 39,
-        "DE": 2,
+        "DE": 3,
         "DO": 9,
         "EC": 18,
         "EG": 2,
@@ -200,7 +200,7 @@
         "GT": 2,
         "HK": 3,
         "HN": 2,
-        "ID": 45,
+        "ID": 44,
         "IL": 1,
         "IN": 2,
         "IT": 1,
@@ -231,7 +231,7 @@
         "TR": 12,
         "TZ": 1,
         "UA": 4,
-        "US": 22,
+        "US": 21,
         "UY": 1,
         "VE": 11,
         "VN": 3,
@@ -268,13 +268,13 @@
         "MY": 1,
         "NL": 4,
         "NP": 1,
-        "RU": 9,
+        "RU": 10,
         "SG": 1,
         "UA": 1,
         "US": 13,
         "VN": 6
       },
-      "total": 71
+      "total": 72
     }
   }
 }
