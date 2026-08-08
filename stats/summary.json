@@ -4,31 +4,31 @@
     "check_timeout_seconds": 6.0,
     "checks_completed": 10000,
     "checks_selected": 10000,
-    "elite_checks_completed": 5,
+    "elite_checks_completed": 2,
     "max_checks_per_run": 10000,
-    "state_entries_pruned": 0
+    "state_entries_pruned": 34
   },
-  "scraped_unique_endpoints": 255187,
+  "scraped_unique_endpoints": 255249,
   "source_errors": [],
   "sources": {
     "dpangestuw-http": {
       "errors": [],
-      "parsed": 3938
+      "parsed": 3868
     },
     "dpangestuw-socks4": {
       "errors": [],
-      "parsed": 2742
+      "parsed": 2936
     },
     "dpangestuw-socks5": {
       "errors": [],
-      "parsed": 2195
+      "parsed": 2381
     },
     "gitrecon1455-fresh-proxy-list": {
       "errors": [],
-      "parsed": 255182
+      "parsed": 255245
     }
   },
-  "updated_at": "2026-08-08T18:04:13+00:00",
+  "updated_at": "2026-08-08T18:59:02+00:00",
   "validated": {
     "elite": {
       "countries": {
@@ -45,41 +45,41 @@
         "NL": 5,
         "PH": 1,
         "PL": 1,
-        "RU": 1,
+        "RU": 3,
         "SA": 1,
         "SG": 1,
         "TH": 1,
         "US": 5
       },
-      "total": 35
+      "total": 37
     },
     "http": {
       "countries": {
-        "AE": 186,
+        "AE": 185,
         "AL": 5,
         "AM": 3,
         "AR": 15,
         "AT": 180,
-        "AU": 225,
+        "AU": 224,
         "BA": 4,
         "BB": 1,
         "BD": 14,
         "BE": 11,
-        "BG": 6,
+        "BG": 7,
         "BR": 237,
         "BS": 5,
         "BW": 1,
         "BY": 1,
         "BZ": 26,
-        "CA": 1927,
+        "CA": 1917,
         "CH": 267,
         "CL": 8,
-        "CN": 308,
+        "CN": 305,
         "CO": 9,
         "CR": 96,
         "CY": 18,
         "CZ": 173,
-        "DE": 675,
+        "DE": 680,
         "DK": 9,
         "DO": 10,
         "DZ": 4,
@@ -96,30 +96,30 @@
         "GI": 5,
         "GR": 9,
         "GT": 9,
-        "HK": 231,
+        "HK": 230,
         "HN": 1,
         "HR": 5,
         "HU": 15,
         "ID": 104,
-        "IE": 17,
+        "IE": 16,
         "IL": 10,
         "IM": 1023,
-        "IN": 147,
+        "IN": 144,
         "IQ": 3,
         "IR": 18,
         "IS": 1,
         "IT": 67,
         "JM": 6,
         "JO": 147,
-        "JP": 99,
+        "JP": 95,
         "KE": 11,
         "KH": 14,
-        "KR": 82,
+        "KR": 81,
         "KY": 4,
         "KZ": 425,
         "LB": 1,
         "LC": 1,
-        "LT": 876,
+        "LT": 872,
         "LU": 312,
         "LV": 8,
         "MA": 2,
@@ -130,7 +130,7 @@
         "MO": 1,
         "MT": 11,
         "MX": 19,
-        "MY": 33,
+        "MY": 32,
         "NA": 2,
         "NL": 2738,
         "NO": 46,
@@ -138,21 +138,20 @@
         "PA": 3,
         "PE": 5,
         "PG": 1,
-        "PH": 19,
-        "PK": 3,
+        "PH": 20,
+        "PK": 4,
         "PL": 62,
         "PR": 3,
         "PT": 9,
         "PY": 2,
-        "QA": 1,
         "RE": 5,
         "RO": 867,
         "RS": 22,
-        "RU": 1393,
+        "RU": 1395,
         "RW": 1,
         "SA": 2,
         "SC": 777,
-        "SE": 200,
+        "SE": 199,
         "SG": 1217,
         "SI": 11,
         "SK": 7,
@@ -160,27 +159,25 @@
         "SY": 1,
         "TC": 1,
         "TG": 1,
-        "TH": 94,
+        "TH": 89,
         "TR": 39,
         "TW": 12,
         "UA": 68,
-        "US": 39842,
+        "US": 39837,
         "UZ": 2,
         "VE": 3,
         "VG": 37,
         "VN": 26,
         "XK": 1,
-        "ZA": 385,
+        "ZA": 384,
         "ZW": 2
       },
-      "total": 63625
+      "total": 63592
     },
     "https": {
       "countries": {
-        "AR": 1,
         "BG": 1,
-        "BR": 3,
-        "CA": 1,
+        "BR": 2,
         "CN": 10,
         "CO": 1,
         "DE": 4,
@@ -189,7 +186,6 @@
         "FI": 1,
         "FR": 4,
         "GB": 1,
-        "GT": 1,
         "HK": 4,
         "ID": 8,
         "IN": 2,
@@ -200,25 +196,25 @@
         "NL": 6,
         "PH": 3,
         "PL": 1,
-        "QA": 1,
-        "RU": 3,
+        "RU": 5,
         "SA": 1,
         "SG": 2,
-        "TH": 6,
-        "US": 15
+        "TH": 3,
+        "US": 14
       },
-      "total": 89
+      "total": 82
     },
     "socks4": {
       "countries": {
         "ES": 1,
         "FR": 1,
         "PL": 1,
-        "RU": 2,
+        "RU": 3,
+        "TH": 1,
         "US": 4,
         "VN": 1
       },
-      "total": 10
+      "total": 12
     },
     "socks5": {
       "countries": {
@@ -226,7 +222,7 @@
         "AU": 1,
         "BR": 1,
         "CA": 1,
-        "CN": 6,
+        "CN": 5,
         "DE": 3,
         "ES": 1,
         "FR": 1,
@@ -234,11 +230,13 @@
         "JP": 3,
         "KH": 1,
         "KR": 1,
+        "MD": 1,
         "MY": 1,
         "NL": 4,
-        "RU": 3,
+        "RU": 4,
         "SC": 1,
-        "SG": 6,
+        "SG": 4,
+        "TH": 1,
         "US": 9
       },
       "total": 46
